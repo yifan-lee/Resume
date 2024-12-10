@@ -16,7 +16,7 @@
     {New York, USA} % Location
     {Oct 2023 - Present} % Date(s)
     {
-      \begin{enumerate}
+      \begin{cvitems}
         \item Derivatives Pricing Algorithm Project
         \begin{itemize}
           \item Led the modular redesign of derivatives pricing algorithm by decomposing it into service class and analysis units.
@@ -38,8 +38,9 @@
         \begin{itemize}
           \item Applied the American Monte Carlo (AMC) method to price American options, replacing the computationally intensive Monte Carlo over Monte Carlo method. This optimization reduced the computational complexity from O(n²) to O(n), significantly improving pricing speed and saving considerable computational resources.
         \end{itemize}
-      \end{enumerate}
+      \end{cvitems}
     }
+
 
 %---------------------------------------------------------
   \cventry
@@ -69,6 +70,35 @@
         \item {Fitted a decision tree with labeled data which could tag new visitor within 20 seconds while the target is 1 min.}
       \end{cvitems}
     }
+
+
+  
+%---------------------------------------------------------
+  \cventry
+    {Project Leader} % Job title
+    {Statistical Consulting Group of University of Connecticut} % Organization
+    {Connecticut, USA} % Location
+    {Sep 2020 - Sep 2023} % Date(s)
+    {
+      \begin{cvitems}
+        \item Credit Card Approval with Unbalanced Data and Outliers 
+        \begin{itemize}
+          \item Decide who to approve or decline for credit based on historical repayment records.
+          \item Adding new missing indicator variables before applying imputing missing value after checking randomness. 
+          \item Generate features based on the distribution of outliers and assign different weights on unbalanced responses.
+          \item Fit logistic regression, XGBoost, and Random Forest models separately and use the linear combination of three models as final model after cross validation.
+        \end{itemize}
+        \item Yelp Reviews Rating Prediction
+        \begin{itemize}
+          \item Predicted Yelp reviews’ rating on 1 million unlabeled text reviews.
+          \item Cleaned 1.5 million Yelp reviews by removing un-English comments, abbreviations, and spelling mistakes. 
+          \item Extracted positive/negative words based on their relative frequency in differently rated reviews to avoid placing too much weight on everyday words like “the”, “a” which can be mistaken as positive words.
+          \item	Transfer text reviews into vectors by Sentence-To-Vector and generate new features from positive/negative words.
+          \item Fitted pre-processed data by Long-Short-Term-Memory (LSTM) neural network and achieved 0.6 root-mean-square-error.
+        \end{itemize}
+      \end{cvitems}
+    }
+
 
 %---------------------------------------------------------
 \end{cventries}

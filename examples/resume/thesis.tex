@@ -1,0 +1,58 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Thesis}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {} % Role
+    {Item-Response-Theory Model with Power Parameter Adjusted for Unbalanced Data} % Event
+    {Connecticut, USA} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+        \item {Estimated individual’s ability and item’s difficulty based on their performances on several.}
+        \item {Adapted logistical regression model by Item-Response-Theory model with a power parameter which can control the skewness of link function.}
+        \item {Combined Sliced sampling and Gibbs sampling method (MCMC) to get estimations of interested variables.}
+        \item {Reduced the prediction error by half compared with normal logistical regression model.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {} % Role
+    {Joint Model of Item Response and Response Time with Dirichlet Process Prior} % Event
+    {Connecticut, USA} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+        \item {Estimated individual’s ability based on both item response (IR) and response time (RT). }
+        \item {Fitted separate logistic and linear regression for IR and RT. Combined them with a nonparametric Dirichlet Process prior on individual’s ability which get rid of normality assumption of variables.}
+        \item {Estimated individual’s ability by Hamiltonian Monte Carlo and clustered individuals by patterns from Dirichlet Process.}
+      \end{cvitems}
+    }
+
+
+%---------------------------------------------------------
+  \cventry
+    {} % Role
+    {Joint Model of Longitudinal Item Response and Survival Time} % Event
+    {Connecticut, USA} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+        \item {Examined trend of individual’s ability over time and their effects on response time.}
+        \item {Individual’s ability was taken as longitudinal and estimated by forward and backward forecasting method.}
+        \item {Response time was fitted as a Cox proportional hazards model through partial likelihood method which is a semiparametric approach.}
+        \item {All unknown parameters are estimated by stochastic gradient descent algorithm.}
+      \end{cvitems}
+    }
+    
+%---------------------------------------------------------
+\end{cventries}
