@@ -17,39 +17,46 @@
     {Oct 2023 - Present} % Date(s)
     {
       \begin{cvitems}
-        \item \textbf{Applied Machine Learning Projects in Generative AI Context}
+        \item \textbf{Assistant AI System for Intelligent Data Retrieval and Analysis}
         \begin{itemize}
-          \item \textbf{Assistant AI System}: Built a retrieval-augmented generation (\textbf{RAG}) system \
-          combining semantic text embeddings and file-based context retrieval to produce accurate and context-aware responses.
-          \item \textbf{Item Blurring Pipeline}: Built a two-stage object detection and classification framework with a Region Proposal Network and classifier to automatically blur specified items in images.
-          \item \textbf{Harmful Content Detection}: Designed a multi-task classification model with early fusion of text and image features to detect potentially harmful or policy-violating email content.
-          \item \textbf{Ad Click Prediction}: Constructed a personalized advertising model using Gradient Boosting Decision Trees (\textbf{GBDT}) and \textbf{DeepFM}, improving ad relevance and user engagement.
+          \item Developed an AI assistant that interprets user input and retrieves relevant data from internal databases for automated analysis and summarization.
+          \item Implemented a \textbf{Retrieval-Augmented Generation (RAG)} architecture: embedded structured and unstructured content—including text, tables, and images—using multi-modal encoders.
+          \item Transformed user queries into dense vector representations and performed semantic search to identify top-matching data entries.
+          \item Constructed dynamic prompts from retrieved content to interface with LLMs, enabling explainable AI-generated responses.
         \end{itemize}
-        \item Modular Redesign of Derivatives Pricing Algorithm
+        \item \textbf{Automated Sensitive Information Detection and Classification}
+        \begin{itemize}
+          \item Built a neural network system to automatically assess and classify documents based on the presence of sensitive information (e.g., customer records, internal data) at the moment of file creation or saving.
+          \item Embedded semi-structured documents (text, tables, metadata) using a hybrid multi-modal pipeline combining Sentence-BERT for free text, TAPAS for tabular data, and early fusion for layout features.
+          \item Applied a shared encoder layer followed by task-specific classification heads for each sensitivity category.
+          \item Combined multi-head outputs to determine the overall confidentiality level, enabling real-time access control and compliance labeling.
+        \end{itemize}
+        \item \textbf{Personalized Ad Recommendation System}
+        \begin{itemize}
+          \item Developed a targeted advertising system to match users with the most relevant ads based on behavioral and demographic features.
+          \item Applied \textbf{K-Means clustering} to segment users into behavior-based cohorts, enabling personalized downstream modeling.
+          \item Implemented a \textbf{DeepFM} model to capture both low-order feature interactions (via factorization machines) and high-order nonlinear patterns (via deep neural networks).
+          \item Accurately predicted user click-through rates (CTR), improving ad relevance and conversion efficiency across user groups.
+        \end{itemize}
+        \item \textbf{Modular Redesign of Derivatives Pricing Algorithm}
         \begin{itemize}
           \item Led the architectural overhaul by decomposing the algorithm into service class and analysis units, archieving high \textbf{decoupling} of code.
           \item Enabling independent updates to each component without affecting the overall system, significantly reducing redundancy and enhancing maintainability.
           \item Designed robust unit testing frameworks, improving system \textbf{debug reliability} by proactively identifying potential errors.
         \end{itemize}
-        \item Optimization of American Options Pricing
+        \item \textbf{Optimization of American Options Pricing}
         \begin{itemize}
           \item Applied the American Monte Carlo (\textbf{AMC}) method to price American options, replacing the original Monte Carlo over Monte Carlo method. 
           \item Achieved a substantial reduction in computational complexity from O(n²) to \textbf{O(n)}, cutting pricing time and saving considerable resources.
         \end{itemize}
-        \item Equity Derivatives Pricing Algorithm Enhancement
+        \item \textbf{Equity Derivatives Pricing Algorithm Enhancement}
         \begin{itemize}
           \item Improved the pricing framework for equity derivatives by transitioning from a market-based risk model to an underlying location-based risk analysis, enhancing accuracy and \textbf{interpretablity}.
           \item Intergrated advanced machine learning techniques, such as \textbf{LSTM}, \textbf{random forest} models with traditional MCMC methods to price derivatives, enabling the pricing of complex toxic options with more than three underlying.
         \end{itemize}
-        \item Counterparty Credit Risk Monitoring
-        \begin{itemize}
-          \item Employed SFT VaR-based models to calculate and monitor Counterparty Credit Risk.
-          \item \textbf{Interpreted} complex data and model results, and delivered clear insights to stakeholders, including cross-disciplinary teams and \textbf{non-technical} audiences.
-          \item Regularly updated model parameters in line with evolving market data, ensuring the models reflect current market conditions and deliver accurate risk assessments.
-        \end{itemize}
       \end{cvitems}
     }
-
+    \vspace{1.2em}
 
 %---------------------------------------------------------
   \cventry
@@ -63,7 +70,7 @@
         \item {Adjusted the prediction under a multinomial model based on the performance of correlated companies, avoiding an over-optimistic forecast.}
       \end{cvitems}
     }
-
+    \vspace{1.2em}
 %---------------------------------------------------------
   \cventry
     {Data Analyst (intern)} % Job title
