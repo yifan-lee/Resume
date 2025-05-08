@@ -1,0 +1,125 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+{Senior Consultant} % Job title
+{Quantitative Trading Book in Ernst \& Young U.S. LLP} % Organization
+{New York, USA} % Location
+{Oct 2023 - Present} % Date(s)
+{
+  \begin{cvitems}
+    \item \textbf{Assistant AI System for Intelligent Data Retrieval and Analysis}
+    \begin{itemize}
+      \item Developed an AI assistant that interprets user input and retrieves relevant data from internal databases for automated analysis and summarization.
+      \item Implemented a \textbf{Retrieval-Augmented Generation (RAG)} architecture: embedded structured and unstructured content—including text, tables, and images—using multi-modal encoders.
+      \item Transformed user queries into dense vector representations and performed semantic search to identify top-matching data entries.
+      \item Constructed dynamic prompts from retrieved content to interface with \textbf{Google Gemini} and other LLMs, enabling context-aware, analytical, and explainable AI-generated responses.
+    \end{itemize}
+    \item \textbf{Automated Sensitive Information Detection and Classification}
+    \begin{itemize}
+      \item Built a neural network system to automatically assess and classify documents based on the presence of sensitive information (e.g., customer records, internal data) at the moment of file creation or saving.
+      \item Embedded document content into vector representations, capturing semantic patterns across text and metadata.
+      \item Designed a shared neural architecture: applied a shared encoder layer followed by task-specific classification heads for each sensitivity category.
+      \item Combined multi-head outputs to determine the overall confidentiality level, enabling real-time access control and compliance labeling.
+    \end{itemize}
+    \item \textbf{Applied Machine Learning Projects in Generative AI Context}
+    \begin{itemize}
+      \item \textbf{Item Blurring Pipeline}: Built a two-stage object detection and classification framework with a Region Proposal Network and classifier to automatically blur specified items in images.
+      \item \textbf{Harmful Content Detection}: Designed a multi-task classification model with early fusion of text and image features to detect potentially harmful or policy-violating email content.
+      \item \textbf{Ad Click Prediction}: Constructed a personalized advertising model using Gradient Boosting Decision Trees (\textbf{GBDT}) and \textbf{DeepFM}, improving ad relevance and user engagement.
+    \end{itemize}
+    \item Modular Redesign of Derivatives Pricing Algorithm
+    \begin{itemize}
+      \item Led the architectural overhaul by decomposing the algorithm into service class and analysis units, archieving high \textbf{decoupling} of code.
+      \item Enabling independent updates to each component without affecting the overall system, significantly reducing redundancy and enhancing maintainability.
+      \item Designed robust unit testing frameworks, improving system \textbf{debug reliability} by proactively identifying potential errors.
+    \end{itemize}
+    \item Optimization of American Options Pricing
+    \begin{itemize}
+      \item Applied the American Monte Carlo (\textbf{AMC}) method to price American options, replacing the original Monte Carlo over Monte Carlo method. 
+      \item Achieved a substantial reduction in computational complexity from O(n²) to \textbf{O(n)}, cutting pricing time and saving considerable resources.
+    \end{itemize}
+    \item Equity Derivatives Pricing Algorithm Enhancement
+    \begin{itemize}
+      \item Improved the pricing framework for equity derivatives by transitioning from a market-based risk model to an underlying location-based risk analysis, enhancing accuracy and \textbf{interpretablity}.
+      \item Intergrated advanced machine learning techniques, such as \textbf{LSTM}, \textbf{random forest} models with traditional MCMC methods to price derivatives, enabling the pricing of complex toxic options with more than three underlying.
+    \end{itemize}
+    \item Counterparty Credit Risk Monitoring
+    \begin{itemize}
+      \item Employed SFT VaR-based models to calculate and monitor Counterparty Credit Risk.
+      \item \textbf{Interpreted} complex data and model results, and delivered clear insights to stakeholders, including cross-disciplinary teams and \textbf{non-technical} audiences.
+      \item Regularly updated model parameters in line with evolving market data, ensuring the models reflect current market conditions and deliver accurate risk assessments.
+    \end{itemize}
+  \end{cvitems}
+}
+
+
+%---------------------------------------------------------
+  \cventry
+    {Securities Analyst Assistant (intern)} % Job title
+    {Bank of China International Holdings Limited} % Organization
+    {Shanghai, China} % Location
+    {Jun 2021-Sep 2021} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Focused on battery and new energy industry. Predicted the short- and long-term performance of stocks of related companies based on time series model with a spike-and-slab error.}
+        \item {Adjusted the prediction under a multinomial model based on the performance of correlated companies and avoided making an over-optimistic forecast compared with previous model.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Data Analyst (intern)} % Job title
+    {HUATAI SECURITIES CO., LTD.（HTSC）} % Organization
+    {Jiangsu, China} % Location
+    {Jul 2017-Sep 2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Unsupervised screened visitors with a strong desire to buy products based on their records on company’s APP.}
+        \item {Cleaned and reshaped the 17 million visitor records by summarizing operations from the same visitor.}
+        \item {Extracted useful variables by PCA (principal component analysis) method.}
+        \item {Divided visitors into five groups by K-means methods and assigned visitors labels by their group.}
+        \item {Fitted a decision tree with labeled data which could tag new visitor within 20 seconds while the target is 1 min.}
+      \end{cvitems}
+    }
+
+
+  
+%---------------------------------------------------------
+  \cventry
+    {Project Leader} % Job title
+    {Statistical Consulting Group of University of Connecticut} % Organization
+    {Connecticut, USA} % Location
+    {Sep 2020 - Sep 2023} % Date(s)
+    {
+      \begin{cvitems}
+        \item Credit Card Approval with Unbalanced Data and Outliers 
+        \begin{itemize}
+          \item Decide who to approve or decline for credit based on historical repayment records.
+          \item Adding new missing indicator variables before applying imputing missing value after checking randomness. 
+          \item Generate features based on the distribution of outliers and assign different weights on unbalanced responses.
+          \item Fit logistic regression, XGBoost, and Random Forest models separately and use the linear combination of three models as final model after cross validation.
+        \end{itemize}
+        \item Yelp Reviews Rating Prediction
+        \begin{itemize}
+          \item Predicted Yelp reviews’ rating on 1 million unlabeled text reviews.
+          \item Cleaned 1.5 million Yelp reviews by removing un-English comments, abbreviations, and spelling mistakes. 
+          \item Extracted positive/negative words based on their relative frequency in differently rated reviews to avoid placing too much weight on everyday words like “the”, “a” which can be mistaken as positive words.
+          \item	Transfer text reviews into vectors by Sentence-To-Vector and generate new features from positive/negative words.
+          \item Fitted pre-processed data by Long-Short-Term-Memory (LSTM) neural network and achieved 0.6 root-mean-square-error.
+        \end{itemize}
+      \end{cvitems}
+    }
+
+
+%---------------------------------------------------------
+\end{cventries}
