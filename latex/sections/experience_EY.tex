@@ -1,0 +1,80 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+
+\cventry
+{Senior Consultant} % Job title
+{Quantitative Trading Book in Ernst \& Young U.S. LLP} % Organization
+{New York, USA} % Location
+{Oct 2023 - Present} % Date(s)
+{
+  \begin{cvitems}
+    \item \textbf{CCAR Stress Testing for Trading Book (ETD \& OTC)}
+    \begin{itemize}
+      \item Designed and implemented a CCAR stress testing framework to quantify P\&L impacts for {equity, FX, and commodity} derivatives under regulatory stress scenarios.
+      \item Built {trade-specific object-oriented classes} to handle heterogeneous transaction structures across ETD and OTC products.
+      \item Integrated firm-wide front-office pricing systems with a {custom fallback pricing engine} to ensure robustness under data or system limitations.
+      \item Produced transparent and intuitive {stress attribution reports}, decomposing total P\&L into individual stress factor impacts for senior risk stakeholders.
+    \end{itemize}
+    \item \textbf{Value-at-Risk (VaR) Risk Matrix Construction and Maintenance}
+    \begin{itemize}
+      \item Maintained and enhanced a VaR calculation framework by regularly updating {risk matrices} used across the trading book.
+      \item \hl{Cleaned and filtered historical time series data, organizing risk drivers by factor classes including \textbf{equity, FX, interest rates, commodities, ABS, and MBS}.}
+      \item Estimated factor-level {volatilities and cross-factor correlations} to construct coherent covariance structures.
+      \item Computed trade-level VaR by combining factor sensitivities, volatilities, correlations, and {MPOR}, enabling consistent risk aggregation across portfolios.
+    \end{itemize}
+    \item \textbf{Generative AI for Ongoing Performance Assessment (OPA) Reporting}
+    \begin{itemize}
+      \item Developed a {multi-agent Generative AI system} using \textbf{LangGraph} to automate OPA validation report generation for trading book models.
+      \item Orchestrated specialized AI agents responsible for data ingestion, data cleaning, trade pricing, result validation, sensitivity testing, and executive-level summarization.
+      \item Enabled agents to dynamically select analytical tools from third-party \textbf{MCP libraries} and retrieve relevant inputs through a \textbf{RAG-based data access layer}.
+      \item Automatically generated end-to-end OPA reports, significantly improving consistency, transparency, and review efficiency for model risk management teams.
+    \end{itemize}
+    \item \textbf{Optimization of American Options Pricing}
+    \begin{itemize}
+      \item Applied the \textbf{American Monte Carlo (AMC)} method to replace a nested Monte Carlo approach for pricing American-style options.
+      \item Reduced computational complexity from \textbf{O(n\textsuperscript{2}) to O(n)}, achieving substantial runtime improvements while preserving pricing accuracy.
+    \end{itemize}
+  \end{cvitems}
+}
+
+%---------------------------------------------------------
+  \cventry
+    {Securities Analyst Assistant (intern)} % Job title
+    {Bank of China International Holdings Limited} % Organization
+    {Shanghai, China} % Location
+    {Jun 2021-Sep 2021} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Focused on battery and new energy industry. Predicted the short- and long-term performance of stocks of related companies based on time series model with a spike-and-slab error.}
+        \item {Adjusted the prediction under a multinomial model based on the performance of correlated companies and avoided making an over-optimistic forecast compared with previous model.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Data Analyst (intern)} % Job title
+    {HUATAI SECURITIES CO., LTD. (HTSC)} % Organization
+    {Jiangsu, China} % Location
+    {Jul 2017-Sep 2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Unsupervised screened visitors with a strong desire to buy products based on their records on company’s APP.}
+        \item {Cleaned and reshaped the 17 million visitor records by summarizing operations from the same visitor.}
+        \item {Extracted useful variables by PCA (principal component analysis) method.}
+        \item {Divided visitors into five groups by K-means methods and assigned visitors labels by their group.}
+        \item {Fitted a decision tree with labeled data which could tag new visitor within 20 seconds while the target is 1 min.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
