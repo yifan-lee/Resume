@@ -17,6 +17,32 @@
 {Oct 2023 - Present} % Date(s)
 {
   \begin{cvitems}
+    \item \textbf{CCAR Stress Testing for Trading Book (ETD \& OTC)}
+    \begin{itemize}
+      \item Designed and implemented a CCAR stress testing framework to quantify P\&L impacts for {equity, FX, and commodity} derivatives under regulatory stress scenarios.
+      \item Built {trade-specific object-oriented classes} and leveraged a \textbf{Depth-First Search (DFS)} traversal to efficiently handle \textbf{heterogeneous transaction structures} stored as complex \textbf{nested dictionaries}.
+      \item Integrated firm-wide front-office pricing systems with a {custom fallback pricing engine} to ensure robustness under data or system limitations.
+      \item Produced transparent and intuitive {stress attribution reports}, decomposing total P\&L into individual stress factor impacts for senior risk stakeholders.
+    \end{itemize}
+    \item \textbf{Value-at-Risk (VaR) Risk Matrix Construction and Maintenance}
+    \begin{itemize}
+      \item Maintained and enhanced a VaR calculation framework by regularly updating {risk matrices} used across the trading book.
+      \item {Cleaned and filtered historical time series data, organizing risk drivers by factor classes including \textbf{equity, FX, interest rates, commodities, ABS, and MBS}.}
+      \item Estimated factor-level {volatilities and cross-factor correlations} to construct coherent covariance structures.
+      \item Computed trade-level VaR by combining factor sensitivities, volatilities, correlations, and {MPOR}, enabling consistent risk aggregation across portfolios.
+    \end{itemize}
+    \item \textbf{Generative AI for Ongoing Performance Assessment (OPA) Reporting}
+    \begin{itemize}
+      \item Developed a {multi-agent Generative AI system} using \textbf{LangGraph} to automate OPA validation report generation for trading book models.
+      \item Orchestrated specialized AI agents responsible for data ingestion, data cleaning, trade pricing, result validation, sensitivity testing, and executive-level summarization.
+      \item Enabled agents to dynamically select analytical tools from third-party \textbf{MCP libraries} and retrieve relevant inputs through a \textbf{RAG-based data access layer}.
+      \item Automatically generated end-to-end OPA reports, significantly improving consistency, transparency, and review efficiency for model risk management teams.
+    \end{itemize}
+    \item \textbf{Optimization of American Options Pricing}
+    \begin{itemize}
+      \item Applied the \textbf{American Monte Carlo (AMC)} method to replace a nested Monte Carlo approach for pricing American-style options.
+      \item Reduced computational complexity from \textbf{O(n\textsuperscript{2}) to O(n)}, achieving substantial runtime improvements while preserving pricing accuracy.
+    \end{itemize}
     \item \textbf{Assistant AI System for Intelligent Data Retrieval and Analysis}
     \begin{itemize}
       \item Developed an AI assistant that interprets user input and retrieves relevant data from internal databases for automated analysis and summarization.
@@ -24,37 +50,23 @@
       \item Transformed user queries into dense vector representations and performed semantic search to identify top-matching data entries.
       \item Constructed dynamic prompts from retrieved content to interface with \textbf{Google Gemini} and other LLMs, enabling context-aware, analytical, and explainable AI-generated responses.
     \end{itemize}
-    \item \textbf{Automated Sensitive Information Detection and Classification}
-    \begin{itemize}
-      \item Built a neural network system to automatically assess and classify documents based on the presence of sensitive information (e.g., customer records, internal data) at the moment of file creation or saving.
-      \item Embedded document content into vector representations, capturing semantic patterns across text and metadata.
-      \item Designed a shared neural architecture: applied a shared encoder layer followed by task-specific classification heads for each sensitivity category.
-      \item Combined multi-head outputs to determine the overall confidentiality level, enabling real-time access control and compliance labeling.
-    \end{itemize}
-    \item \textbf{Personalized Ad Recommendation System}
-    \begin{itemize}
-      \item Developed a targeted advertising system to match users with the most relevant ads based on behavioral and demographic features.
-      \item Applied \textbf{K-Means clustering} to segment users into behavior-based cohorts, enabling personalized downstream modeling.
-      \item Implemented a \textbf{DeepFM} model to capture both low-order feature interactions (via factorization machines) and high-order nonlinear patterns (via deep neural networks).
-      \item Accurately predicted user click-through rates (CTR), improving ad relevance and conversion efficiency across user groups.
-    \end{itemize}
-    \item Modular Redesign of Derivatives Pricing Algorithm
+    \item \textbf{Modular Redesign of Derivatives Pricing Algorithm}
     \begin{itemize}
       \item Led the architectural overhaul by decomposing the algorithm into service class and analysis units, archieving high \textbf{decoupling} of code.
       \item Enabling independent updates to each component without affecting the overall system, significantly reducing redundancy and enhancing maintainability.
       \item Designed robust unit testing frameworks, improving system \textbf{debug reliability} by proactively identifying potential errors.
     \end{itemize}
-    \item Optimization of American Options Pricing
+    \item \textbf{Optimization of American Options Pricing}
     \begin{itemize}
       \item Applied the American Monte Carlo (\textbf{AMC}) method to price American options, replacing the original Monte Carlo over Monte Carlo method. 
       \item Achieved a substantial reduction in computational complexity from O(n²) to \textbf{O(n)}, cutting pricing time and saving considerable resources.
     \end{itemize}
-    \item Equity Derivatives Pricing Algorithm Enhancement
+    \item \textbf{Equity Derivatives Pricing Algorithm Enhancement}
     \begin{itemize}
       \item Improved the pricing framework for equity derivatives by transitioning from a market-based risk model to an underlying location-based risk analysis, enhancing accuracy and \textbf{interpretablity}.
       \item Intergrated advanced machine learning techniques, such as \textbf{LSTM}, \textbf{random forest} models with traditional MCMC methods to price derivatives, enabling the pricing of complex toxic options with more than three underlying.
     \end{itemize}
-    \item Counterparty Credit Risk Monitoring
+    \item \textbf{Counterparty Credit Risk Monitoring}
     \begin{itemize}
       \item Employed SFT VaR-based models to calculate and monitor Counterparty Credit Risk.
       \item \textbf{Interpreted} complex data and model results, and delivered clear insights to stakeholders, including cross-disciplinary teams and \textbf{non-technical} audiences.
@@ -80,7 +92,7 @@
 %---------------------------------------------------------
   \cventry
     {Data Analyst (intern)} % Job title
-    {HUATAI SECURITIES CO., LTD.（HTSC）} % Organization
+    {HUATAI SECURITIES CO., LTD. (HTSC)} % Organization
     {Jiangsu, China} % Location
     {Jul 2017-Sep 2017} % Date(s)
     {
@@ -103,20 +115,41 @@
     {Sep 2020 - Sep 2023} % Date(s)
     {
       \begin{cvitems}
-        \item Credit Card Approval with Unbalanced Data and Outliers 
+        \item \textbf{Automated Sensitive Information Detection and Classification}
+        \begin{itemize}
+          \item Built a neural network system to automatically assess and classify documents based on the presence of sensitive information (e.g., customer records, internal data) at the moment of file creation or saving.
+          \item Embedded document content into vector representations, capturing semantic patterns across text and metadata.
+          \item Designed a shared neural architecture: applied a shared encoder layer followed by task-specific classification heads for each sensitivity category.
+          \item Combined multi-head outputs to determine the overall confidentiality level, enabling real-time access control and compliance labeling.
+        \end{itemize}
+        \item \textbf{Personalized Ad Recommendation System}
+        \begin{itemize}
+          \item Developed a targeted advertising system to match users with the most relevant ads based on behavioral and demographic features.
+          \item Applied \textbf{K-Means clustering} to segment users into behavior-based cohorts, enabling personalized downstream modeling.
+          \item Implemented a \textbf{DeepFM} model to capture both low-order feature interactions (via factorization machines) and high-order nonlinear patterns (via deep neural networks).
+          \item Accurately predicted user click-through rates (CTR), improving ad relevance and conversion efficiency across user groups.
+        \end{itemize}
+        \item \textbf{Credit Card Approval with Unbalanced Data and Outliers}
         \begin{itemize}
           \item Decide who to approve or decline for credit based on historical repayment records.
           \item Adding new missing indicator variables before applying imputing missing value after checking randomness. 
           \item Generate features based on the distribution of outliers and assign different weights on unbalanced responses.
           \item Fit logistic regression, XGBoost, and Random Forest models separately and use the linear combination of three models as final model after cross validation.
         \end{itemize}
-        \item Yelp Reviews Rating Prediction
+        \item \textbf{Yelp Reviews Rating Prediction}
         \begin{itemize}
           \item Predicted Yelp reviews’ rating on 1 million unlabeled text reviews.
           \item Cleaned 1.5 million Yelp reviews by removing un-English comments, abbreviations, and spelling mistakes. 
           \item Extracted positive/negative words based on their relative frequency in differently rated reviews to avoid placing too much weight on everyday words like “the”, “a” which can be mistaken as positive words.
           \item	Transfer text reviews into vectors by Sentence-To-Vector and generate new features from positive/negative words.
           \item Fitted pre-processed data by Long-Short-Term-Memory (LSTM) neural network and achieved 0.6 root-mean-square-error.
+        \end{itemize}
+        \item \textbf{Credit Card Fraud Detection using Unsupervised Learning}
+        \begin{itemize}
+          \item Developed an unsupervised fraud detection system to identify suspicious activities from high-dimensional, anonymized consumption data.
+          \item Implemented an \textbf{Isolation Forest} algorithm to address the absence of labels, isolating anomalies by randomly partitioning features and measuring tree path lengths.
+          \item Optimized for \textbf{low computational latency} and minimal memory footprint, ensuring high-speed processing on hardware-constrained environments.
+          \item Navigated compliance restrictions where all variables were \textbf{PCA-transformed or masked}, delivering robust performance without relying on explicit feature semantics.
         \end{itemize}
       \end{cvitems}
     }
