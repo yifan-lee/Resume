@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1768776416.73515 "resume.xdv" "resume.pdf" "resume" 1768776417.04354 0
-  "resume.xdv" 1768776416.70459 53672 ee46baa17909006095b1117a297c565a "xelatex"
+["xdvipdfmx"] 1771968650.36125 "resume.xdv" "resume.pdf" "resume" 1771968650.70198 0
+  "resume.xdv" 1771968650.33155 52892 a29878230dac4158c66687e658e441e7 "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1768776415.48995 "/Users/yifanli/Github/Resume/latex/resume.tex" "resume.xdv" "resume" 1768776417.04234 0
-  "/Users/yifanli/Github/Resume/latex/resume.tex" 1768776415.42514 3854 aaaa05a2fc9ef42db6bd1313621fb75e ""
+["xelatex"] 1771968649.06201 "/Users/yifanli/Github/Resume/latex/resume.tex" "resume.xdv" "resume" 1771968650.70077 0
+  "/Users/yifanli/Github/Resume/latex/resume.tex" 1771968533.97966 3947 8e63a748bcd3b7921c499d4dcf933642 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -177,11 +177,11 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "awesome-cv.cls" 1767902521.97522 29599 a4c3e1c95ae6fe2c2e478da6f1381157 ""
-  "resume.aux" 1768776416.70396 72 49953267bd44a605718cb5e0eb508bfe "xelatex"
-  "resume.tex" 1768776415.42514 3854 aaaa05a2fc9ef42db6bd1313621fb75e ""
-  "sections/education_OnePage.tex" 1768776327.78793 1038 398dee7f4248a5440d2fcea9063c708c ""
-  "sections/experience_ds.tex" 1768776233.65206 5701 eb36c8a9a890a5aee70ce0dea82ecd44 ""
+  "awesome-cv.cls" 1771430639.11305 29599 a4c3e1c95ae6fe2c2e478da6f1381157 ""
+  "resume.aux" 1771968650.33119 72 49953267bd44a605718cb5e0eb508bfe "xelatex"
+  "resume.tex" 1771968533.97966 3947 8e63a748bcd3b7921c499d4dcf933642 ""
+  "sections/education_OnePage.tex" 1771620423.66024 1097 83d8153eef82f919d91abe0bfa472e9c ""
+  "sections/experience_ds.tex" 1771968648.98366 5480 21e44372b2ca0446fe3cf15c1cf5129c ""
   "sections/skill.tex" 1767893676.8121 857 5c85d0afaf421a35094a739e3dac03d8 ""
   (generated)
   "resume.aux"

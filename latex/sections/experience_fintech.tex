@@ -1,0 +1,85 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+\vspace{-2.0mm}
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+  {Senior Consultant | Data Science \& Quantitative Strategy}
+  {Ernst \& Young LLP (EY)}
+  {New York, NY}
+  {Oct. 2023 - Present}
+  {
+    \begin{cvitems}
+      \item {\textbf{Multi-Agent Financial Reporting System based on LangGraph}}
+        \begin{itemize}
+          \item {Architected an automated OPA reporting pipeline using \textbf{LangGraph} to process portfolio transaction data, transforming raw CSV inputs into comprehensive compliance reports.}
+          \item {Developed a \textbf{multi-agent orchestration} framework involving specialized nodes for \textbf{Pricing}, \textbf{Validation}, \textbf{Testing}, and \textbf{Report Synthesis}.}
+          \item {Designed an automated evaluation system to \textbf{score} generated reports against OPA rubrics and provide iterative feedback.}
+          \item {Built an interactive frontend web application using \textbf{Streamlit}, enabling end-users to seamlessly upload portfolio data, trigger the multi-agent pipeline, and visualize generated reports in real-time.}
+          \item {Streamlined the end-to-end assessment process, reducing manual intervention and enhancing the accuracy of regulatory submissions.}
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{CCAR Stress Testing for Trading Book (ETD \& OTC)}}
+        \begin{itemize}
+          \item Designed and implemented a CCAR stress testing framework to quantify P\&L impacts for {equity, FX, and commodity} derivatives under regulatory stress scenarios.
+          \item Architected a \textbf{decoupled} modular system featuring a central orchestrator that automatically identifies and dynamically invokes the appropriate analysis units and trade classes for diverse financial products.
+          \item Built {trade-specific object-oriented classes} and leveraged a \textbf{Depth-First Search (DFS)} traversal to efficiently handle \textbf{heterogeneous transaction structures} stored as complex \textbf{nested dictionaries}.
+          \item Integrated firm-wide pricing systems with a {custom fallback pricing engine} to ensure robustness under data or system limitations.
+          \item Produced transparent and intuitive {stress attribution reports}, decomposing total P\&L into stress factor level for senior risk stakeholders.
+        \end{itemize}
+      \vspace{0.5mm}
+      \item \textbf{Value-at-Risk (VaR) Risk Matrix Construction and Maintenance}
+        \begin{itemize}
+          \item Maintained and enhanced a VaR calculation framework by regularly updating {risk matrices} used across the trading book.
+          \item {Cleaned and filtered historical time series data, organizing risk drivers by factor classes including \textbf{equity, FX, interest rates, commodities, ABS, and MBS}.}
+          \item Estimated factor-level {volatilities and cross-factor correlations} to construct coherent covariance structures.
+          \item Computed trade-level VaR by combining factor sensitivities, volatilities, correlations, and {MPOR}, enabling consistent risk aggregation across portfolios.
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{End-to-End Object Detection System based on DEtection TRansformer (DETR)}}
+        \begin{itemize}
+          \item {Engineered an object detection pipeline leveraging \textbf{DETR} to accurately identify multiple objects and predict their relative bounding box coordinates directly from raw images.}
+          \item {Designed a robust data preprocessing workflow for a large-scale dataset of \textbf{100,000} images with \textbf{thousands} of distinct labels, executing image and coordinate \textbf{normalization} while implementing \textbf{resampling strategies} to mitigate label imbalance.}
+          \item {Integrated \textbf{Hungarian Matching} for optimal bipartite assignment, significantly improving precision for visually similar object categories.}
+          \item {Trained the model by optimizing a complex bipartite matching loss function, strategically integrating \textbf{Weighted Cross-Entropy} for classification with \textbf{L1 Loss} and \textbf{Generalized IoU (GIoU)} for precise bounding box regression.}
+          \item {Enhanced the \textbf{detection rate of critical objects} and achieved a rigorous balance between Type I and Type II errors, significantly boosting the overall reliability of the model.}
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{Scalable Visual Retrieval System using Vision Transformers (ViT)}}
+        \begin{itemize}
+          \item {Developed a high-performance visual search engine utilizing \textbf{ViT}, successfully fusing visual features with \textbf{user metadata} to deliver highly personalized visual content.}
+          \item {Built an end-to-end data preprocessing pipeline (resizing, scaling, and Z-score normalization) for a dataset of over \textbf{1,000,000} labeled images, and trained the ViT model utilizing \textbf{Cross-Entropy Loss} to extract robust high-dimensional classification vectors.}
+          \item {Implemented \textbf{Locality Sensitive Hashing (LSH)} for efficient Approximate Nearest Neighbor (ANN) search, categorizing images into coarse buckets and reducing retrieval latency from ~100ms to \textbf{~10ms} while maintaining high precision.}
+          \item {Led production A/B testing and developed a conversion framework to map \textbf{Click-Through Rate (CTR)} gains to \textbf{Customer Lifetime Value (LTV)} metrics, quantifying business ROI.}
+        \end{itemize}
+    \end{cvitems}
+  }
+
+
+    
+
+  
+% %---------------------------------------------------------
+%   \cventry
+%     {Project Leader} % Job title
+%     {Statistical Consulting Group of University of Connecticut} % Organization
+%     {Connecticut, USA} % Location
+%     {Sep 2020 - Sep 2023} % Date(s)
+%     {
+%       \begin{cvitems}
+%         \item \textbf{Credit Card Fraud Detection using Unsupervised Learning}
+%         \begin{itemize}
+%           \item Developed an unsupervised fraud detection system to identify suspicious activities from anonymized consumption data.
+%           \item Implemented an \textbf{Isolation Forest} algorithm to address the absence of labels, isolating anomalies by randomly partitioning features and measuring tree path lengths.
+%           \item Optimized for \textbf{low computational latency} and minimal memory footprint, ensuring high-speed processing on hardware-constrained environments.
+%           \item Navigated compliance restrictions where all variables were \textbf{PCA-transformed or masked}, delivering robust performance without relying on explicit feature semantics.
+%         \end{itemize}
+%       \end{cvitems}
+%     }
+
+
+% %---------------------------------------------------------
+\end{cventries}
