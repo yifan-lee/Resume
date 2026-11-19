@@ -1,0 +1,121 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+% \vspace{-2.0mm}
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+  {Senior Consultant | Security Research Engineer (Applied ML, Privacy \& Threat Detection)}
+  {Ernst \& Young LLP (EY)}
+  {New York, NY}
+  {Oct. 2023 - Present}
+  {
+    \begin{cvitems}
+      \item {\textbf{Security Research: Visual Privacy, DLP, and Adversarial ML}}
+        \begin{itemize}
+          \item {
+            Researched and built large-scale \textbf{Visual Data Loss Prevention (Visual DLP)} systems to 
+            detect and redact sensitive visual content (PII, confidential documents) 
+            using \textbf{Vision Transformers (ViT)} in adversarial and high-noise environments.
+          }
+          \item {
+            Designed end-to-end training and evaluation pipelines for \textbf{1M+} labeled images and 
+            led safety A/B experiments, meticulously tuning operating thresholds to 
+            balance false positives against critical threat omissions (false negatives).
+          }
+          \item {
+            Implemented \textbf{Locality-Sensitive Hashing (LSH)} for high-dimensional visual fingerprinting, 
+            enabling real-time fuzzy matching of known sensitive assets, 
+            and reducing exfiltration detection latency by \textbf{90\%} (from ~100 ms to ~10 ms).
+          }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item \textbf{Threat Research \& Unsupervised Anomaly Detection}
+        \begin{itemize}
+          \item {
+            Engineered an \textbf{unsupervised threat detection} system to proactively  
+            identify \textbf{zero-day attacks} and unknown adversarial behaviors 
+            from high-dimensional, anonymized telemetry.
+          }
+          \item {
+            Implemented and evaluated \textbf{Isolation Forest-based} models 
+            without reliance on labeled attack data or static signatures.
+          }
+          \item {
+            Optimized inference paths for real-time security monitoring, 
+            achieving low latency and minimal memory overhead suitable for large-scale deployment.
+          }
+          \item {
+            Maintained detection robustness under strict compliance constraints,  
+            successfully extracting threat signals from high-dimensional, 
+            \textbf{PCA-transformed, and semantically masked telemetry}.
+          }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{Sensitive Data Localization \& Automated Redaction (DETR)}}
+        \begin{itemize}
+          \item {
+            Researched and implemented object-level sensitive data localization using 
+            \textbf{DEtection TRansformer (DETR)} 
+            to enable pixel-accurate redaction and prevent partial data leakage.
+          }
+          \item {
+            Built scalable data pipelines for \textbf{100K+} images with thousands of label classes, 
+            addressing extreme class imbalance via resampling and distribution-aware training.
+          }
+          \item {
+            Optimized optimal bipartite assignment via \textbf{Hungarian matching} and 
+            composite loss functions (Weighted CE, L1, GIoU), 
+            ensuring rigorous bounding box regression and high precision for 
+            visually similar artifacts under adversarial edge cases.
+          }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{Behavioral Security Analytics \& UEBA Research}}
+        \begin{itemize}
+          \item {
+            Built an unsupervised User and \textbf{Entity Behavior Analytics (UEBA)} framework to 
+            detect anomalous user sessions exhibiting high-risk data access patterns.
+          }
+          \item {
+            Aggregated and normalized \textbf{17M+} telemetry records, 
+            performing visitor-level summarization to support scalable behavioral modeling and anomaly detection.
+          }
+          \item {
+            Applied \textbf{PCA} for representation learning, 
+            clustered users into behavioral cohorts using \textbf{K-means}, and assigned interpretable risk labels.
+          }
+          \item {
+            Trained lightweight supervised classifiers to score new sessions in near real time, 
+            enabling rapid triage and threat containment.
+          }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{AI Safety \& Secure Multi-Agent Systems}}
+        \begin{itemize}
+          \item {
+            Designed and built a \textbf{multi-agent} reporting system using LangGraph, 
+            with explicit focus on AI safety, isolation boundaries, and abuse resistance.
+          }
+          \item {
+            Architected decentralized agent orchestration (Pricing, Validation, Risk Testing) 
+            with hardened inter-agent communication to \textbf{reduce prompt injection} and logic manipulation risk.
+          }
+          \item {
+            Developed automated validation and grading tools to \textbf{detect hallucinations} and 
+            enforce safety constraints on generated outputs.
+          }
+          \item {
+            Delivered a secure \textbf{Streamlit-based} research interface for controlled data ingestion, 
+            pipeline execution, and real-time inspection.
+          }
+        \end{itemize}
+    \end{cvitems}
+  }
+
+
+
+% %---------------------------------------------------------
+\end{cventries}

@@ -39,12 +39,35 @@
 % \definecolor{lighttext}{HTML}{999999}
 % \definecolor{sectiondivider}{HTML}{5D5D5D}
 
+% \definecolor{darktext}{HTML}{000000}
+\definecolor{text}{HTML}{000000}
+\definecolor{graytext}{HTML}{333333}
+% \definecolor{lighttext}{HTML}{555555}
+% \definecolor{sectiondivider}{HTML}{333333}
+
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{false}
+
+% Make body text font thicker (darker)
+\renewcommand*{\bodyfontlight}{\bodyfont}
+
+% Reduce the spacing between sections
+\renewcommand{\acvSectionTopSkip}{0.5mm}
+\renewcommand{\acvSectionContentTopSkip}{0.5mm}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+
+
+%-------------------------------------------------------------------------------
+% 1. 让 Degree 和 Job title 变成和正文一样的普通字体（去除 Small Caps，恢复正常字号与颜色）
+%-------------------------------------------------------------------------------
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{text} #1}}
+%-------------------------------------------------------------------------------
+% 2. 让标题上的姓氏 "Li" 不加粗（与前面的 Yifan 保持一致的字重）
+%-------------------------------------------------------------------------------
+\renewcommand*{\headerlastnamestyle}[1]{{\fontsize{16pt}{1em}\headerfontlight\color{text} #1}}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -54,7 +77,7 @@
 % \photo[rectangle,edge,right]{./sections/profile}
 \name{Yifan}{Li}
 % \position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
-\address{1 Park View Ave, Jersey City, NJ, 07302}
+\address{444 Washington Blvd, Jersey City, NJ, 07310}
 
 \mobile{(+1) 608-216-5993}
 \email{ivanlee142857@gmail.com}
@@ -99,8 +122,15 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 
+
 \input{./sections/education_OnePage.tex}
-\input{./sections/experience_ds.tex}
+
+% \input{./sections/summary_ds.tex}
+\input{./sections/summary_fintech.tex}
+% \input{./sections/experience_ds-temp.tex}
+% \input{./sections/experience_fin.tex}
+\input{./sections/experience_fintech.tex}
+% \input{./sections/experience_cybersecurity.tex}
 % \input{./sections/experience_full2.tex}
 % \input{./sections/experience_fintech.tex}
 % \input{./sections/thesis_OnePage.tex}
