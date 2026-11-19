@@ -1,0 +1,151 @@
+%!TEX root = ../resume.tex
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+\vspace{-2.0mm}
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+  {Senior Consultant | Data Science \& Quantitative Strategy}
+  {Ernst \& Young LLP (EY)}
+  {New York, NY}
+  {Oct. 2023 - Present}
+  {
+    \begin{cvitems}
+      \item {\textbf{Dual-Stage Credit Risk Modeling \& High-Risk Applicant Screening}}
+        \begin{itemize}
+          \item {
+            Architected a two-stage credit risk framework on a dataset of \textbf{200,000+ loan applicants}: 
+            an \textbf{unsupervised screening engine} for instant cold-start risk filtering, 
+            and a \textbf{supervised ensemble model} for applicants with repayment history.
+          }
+          \item {
+            Implemented \textbf{Isolation Forest} to isolate extreme high-risk outliers 
+            based on tree partition path lengths; 
+            selected it for its \textbf{low computational latency and minimal memory footprint}, 
+            enabling real-time, hardware-constrained screening without requiring historical labels.
+          }
+          \item {
+            Aggregated raw payment logs into behavioral metrics, 
+            created \textbf{missing indicator variables} to measure data completeness, 
+            and applied \textbf{class-weighted loss} to address severe default imbalance.
+          }
+          \item {
+            Ensembled \textbf{Logistic Regression, Random Forest, and XGBoost} in a mixture-of-experts style, 
+            boosting model \textbf{AUC by +0.02} and 
+            establishing reliable approval cutoffs for risk management.
+          }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{Multi-Agent Financial Reporting System based on LangGraph}}
+        \begin{itemize}
+          \item {
+            Built a \textbf{multi-agent system} using \textbf{LangGraph} to 
+            automate Ongoing Performance Assessment (OPA) reporting, 
+            eliminating heavy manual documentation.
+          }
+          \item {
+            Orchestrated specialized agents to execute the end-to-end quantitative workflow: 
+            {Option Pricing}, {Validation}, 
+            {Sensitivity \& Risk Testing}, and {Report Synthesis}, 
+            achieving maximum \textbf{reusability} across diverse report templates 
+            sharing common analytical agents.
+          }
+          \item {
+            Developed an interactive \textbf{Streamlit} dashboard allowing stakeholders to upload raw data, 
+            trigger the pipeline, and visualize validation metrics in real time.
+          }
+          \item {
+            Reduced the operational effort from a team of dozens to a small maintenance crew, 
+            significantly shortening report delivery time while ensuring high consistency.
+          }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{CCAR Stress Testing for Trading Book (ETD \& OTC)}}
+        \begin{itemize}
+          \item {
+            Redesigned the \textbf{CCAR stress testing framework} 
+            (Comprehensive Capital Analysis and Review) into a modular architecture 
+            to simulate P\&L and risk impacts across \textbf{\$20B+ in notional exposure} for equity, FX, and commodity derivatives 
+            under regulatory scenarios.
+          }
+          \item {
+            Replaced fragmented manual workflows (spreadsheets, ad-hoc scripts) with 
+            a standardized \textbf{Python pipeline} to automatically 
+            ingest, clean, and merge data across disparate databases.
+          }
+          \item {
+            Implemented a \textbf{Depth-First Search (DFS)} algorithm to traverse complex, 
+            nested trade attribute dictionaries, extracting precise contract terms for exact pricing.
+          }
+          \item {
+            Shortened the end-to-end stress testing cycle from \textbf{months to weeks} 
+            while significantly improving P\&L calculation accuracy and audit readiness.
+      }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{Accelerated American Options Pricing via American Monte Carlo (AMC)}}
+        \begin{itemize}
+          \item {
+            Resolved the computational bottleneck in American option valuation, 
+            replacing computationally prohibitive 
+            \textbf{MCMC-over-MCMC} simulations.
+            Implemented the \textbf{American Monte Carlo (AMC)} framework, 
+            reducing calculation time from $\mathbf{O(n^2)}$ to $\mathbf{O(n)}$.
+          }
+          \item {
+            Incorporated cross-asset \textbf{underlying correlation structures} into the joint simulation, 
+            enabling simultaneous valuation of mixed portfolios 
+            (e.g., vanilla and binary American options).
+          }
+          \item {
+            Slashed portfolio pricing runtime from \textbf{days to a few minutes} 
+            while preserving strict pricing precision and convergence standards.
+          }
+        \end{itemize}
+    \end{cvitems}
+    \vspace{2.5mm}
+  }
+%---------------------------------------------------------
+  \cventry
+    {Solo Developer | Indie Game Project} % Job title / Role
+    {Realmwand: The First Tower (2D RPG Game)} % Organization / Project
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems}
+        \item {
+          Architected and developed a 2D Active Time Battle (ATB) grid-based RPG from scratch, 
+          implementing a clean, modular architecture powered by an event-driven signal system and 
+          strict data/runtime state separation.
+        }
+      \end{cvitems}
+    }
+
+
+    
+
+  
+% %---------------------------------------------------------
+%   \cventry
+%     {Project Leader} % Job title
+%     {Statistical Consulting Group of University of Connecticut} % Organization
+%     {Connecticut, USA} % Location
+%     {Sep 2020 - Sep 2023} % Date(s)
+%     {
+%       \begin{cvitems}
+%         \item \textbf{Credit Card Fraud Detection using Unsupervised Learning}
+%         \begin{itemize}
+%           \item Developed an unsupervised fraud detection system to identify suspicious activities from anonymized consumption data.
+%           \item Implemented an \textbf{Isolation Forest} algorithm to address the absence of labels, isolating anomalies by randomly partitioning features and measuring tree path lengths.
+%           \item Optimized for \textbf{low computational latency} and minimal memory footprint, ensuring high-speed processing on hardware-constrained environments.
+%           \item Navigated compliance restrictions where all variables were \textbf{PCA-transformed or masked}, delivering robust performance without relying on explicit feature semantics.
+%         \end{itemize}
+%       \end{cvitems}
+%     }
+
+
+% %---------------------------------------------------------
+\end{cventries}

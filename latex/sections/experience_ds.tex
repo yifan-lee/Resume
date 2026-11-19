@@ -1,0 +1,115 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+  {Senior Consultant | Data Science \& Quantitative Strategy}
+  {Ernst \& Young LLP (EY)}
+  {New York, NY}
+  {Oct. 2023 - Present}
+  {
+    \begin{cvitems}
+      \item {\textbf{Scalable Visual Retrieval System using Vision Transformers (ViT)}}
+        \begin{itemize}
+          \item {
+            Processed and analyzed a large-scale unstructured dataset of \textbf{>1,000,000} images, 
+            building an end-to-end data pipeline and utilizing Transformer-based embeddings (\textbf{ViT}) to extract robust feature embeddings.
+          }
+          \item {
+            Fused visual features with \textbf{user metadata} to deliver personalized visual content; 
+            implemented high-performance retrieval algorithms that reduced latency from ~100ms 
+            to \textbf{~10ms} while maintaining high precision.
+          }
+          \item {
+            Led production \textbf{A/B testing} and developed a conversion framework mapping 
+            \textbf{Click-Through Rate (CTR)} gains directly to \textbf{Customer Lifetime Value (LTV)} metrics, 
+            successfully quantifying the business ROI of technical improvements.
+          }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{App User Behavior Analytics \& Segmentation Pipeline}}
+        \begin{itemize}
+          \item {
+            Processed and engineered behavioral features from a large-scale dataset of 
+            over \textbf{17 million} app user interaction records, 
+            creating a robust foundation for downstream predictive modeling.
+          }
+          \item {
+            Developed a scalable customer segmentation model using \textbf{Principal Component Analysis (PCA)} 
+            for dimensionality reduction and \textbf{K-Means clustering}, 
+            successfully categorizing users into 5 distinct behavioral cohorts based on their propensity to purchase.
+          }
+          \item {
+            Built and deployed a \textbf{Decision Tree classifier} using the segmented data to 
+            accurately tag and score new visitors in real-time 
+            (reducing latency from a 1-minute target to under 20 seconds).
+          }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{Propensity Modeling for High-Value Player Identification}}
+        \begin{itemize}
+          \item {
+            Developed a highly accurate ensemble predictive model 
+            (combining \textbf{XGBoost, Random Forest, and Logistic Regression}) 
+            to identify "premium" users with high conversion or \textbf{lifetime value (LTV)} potential 
+            based on historical engagement records.
+          }
+          \item {
+            Engineered robust behavioral features by analyzing the distribution of 
+            highly engaged "outlier" users; 
+            rigorously handled missing telemetry data by introducing indicator variables 
+            and verifying randomness prior to imputation.
+          }
+          \item {
+            Handled incomplete telemetry records by introducing missing-value indicator variables 
+            and conducting rigorous statistical \textbf{randomness checks} prior to data imputation, 
+            ensuring high data integrity.
+          }
+          \item {
+            Overcame severe \textbf{class imbalance} by implementing strategic class-weighting techniques 
+            and evaluating model performance through rigorous cross-validation.
+          }
+          \item {
+            Synthesized individual models into an optimized linear combination to 
+            maximize \textbf{prediction precision}, enabling targeted marketing campaigns 
+            and premium subscription up-sell strategies.
+          }
+        \end{itemize}
+      \vspace{0.5mm}
+      \item {\textbf{Unsupervised Anomaly Detection for Platform Telemetry}}
+        \begin{itemize}
+          \item {
+            Developed an \textbf{unsupervised} pipeline to identify anomalous user operations 
+            and potential platform risks from \textbf{high-dimensional, anonymized} telemetry data.
+          }
+          \item {
+            Implemented an \textbf{Isolation Forest} algorithm to overcome the lack of labeled anomaly data, 
+            successfully isolating irregular behavioral patterns based on \textbf{structural deviations} 
+            rather than historical labels.
+          }
+          \item {
+            Optimized model architecture for \textbf{low computational latency} and 
+            minimal memory environments, ensuring high-speed processing suitable for large-scale, 
+            hardware-constrained production environments.
+          }
+          \item {
+            Successfully navigated strict data privacy and compliance restrictions, 
+            delivering robust anomaly detection performance on 
+            \textbf{fully PCA-transformed and masked} variables without 
+            relying on explicit feature semantics.
+          }
+        \end{itemize}
+    \end{cvitems}
+  }
+
+
+%---------------------------------------------------------
+\end{cventries}
